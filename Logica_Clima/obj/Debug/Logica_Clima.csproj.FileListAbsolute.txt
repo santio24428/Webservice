@@ -1,0 +1,12 @@
+C:\Users\santiago\source\repos\WebService_Prueba\Logica_Clima\bin\Debug\Logica_Clima.dll.config
+C:\Users\santiago\source\repos\WebService_Prueba\Logica_Clima\bin\Debug\Logica_Clima.dll
+C:\Users\santiago\source\repos\WebService_Prueba\Logica_Clima\bin\Debug\Logica_Clima.pdb
+C:\Users\santiago\source\repos\WebService_Prueba\Logica_Clima\bin\Debug\EntityFramework.dll
+C:\Users\santiago\source\repos\WebService_Prueba\Logica_Clima\bin\Debug\Datos_Clima.dll
+C:\Users\santiago\source\repos\WebService_Prueba\Logica_Clima\bin\Debug\Datos_Clima.pdb
+C:\Users\santiago\source\repos\WebService_Prueba\Logica_Clima\bin\Debug\Datos_Clima.dll.config
+C:\Users\santiago\source\repos\WebService_Prueba\Logica_Clima\obj\Debug\Logica_Clima.csproj.AssemblyReference.cache
+C:\Users\santiago\source\repos\WebService_Prueba\Logica_Clima\obj\Debug\Logica_Clima.csproj.CoreCompileInputs.cache
+C:\Users\santiago\source\repos\WebService_Prueba\Logica_Clima\obj\Debug\Logica_Clima.csproj.CopyComplete
+C:\Users\santiago\source\repos\WebService_Prueba\Logica_Clima\obj\Debug\Logica_Clima.dll
+C:\Users\santiago\source\repos\WebService_Prueba\Logica_Clima\obj\Debug\Logica_Clima.pdb

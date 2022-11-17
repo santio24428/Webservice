@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+  <EntityContainerMapping StorageEntityContainer="dbWS_ClimaModelStoreContainer" CdmEntityContainer="dbWS_ClimaEntities">
+    <EntitySetMapping Name="T_CLIMA">
+      <EntityTypeMapping TypeName="dbWS_ClimaModel.T_CLIMA">
+        <MappingFragment StoreEntitySet="T_CLIMA">
+          <ScalarProperty Name="Id_CLIMA" ColumnName="Id_CLIMA" />
+          <ScalarProperty Name="IdUSUARIO_CLIMA" ColumnName="IdUSUARIO_CLIMA" />
+          <ScalarProperty Name="CIUDAD_CLIMA" ColumnName="CIUDAD_CLIMA" />
+          <ScalarProperty Name="TEMPERATURA_CLIMA" ColumnName="TEMPERATURA_CLIMA" />
+          <ScalarProperty Name="FECHA_CLIMA" ColumnName="FECHA_CLIMA" />
+          <ScalarProperty Name="ESTADO_CLIMA" ColumnName="ESTADO_CLIMA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_PERSONAS">
+      <EntityTypeMapping TypeName="dbWS_ClimaModel.T_PERSONAS">
+        <MappingFragment StoreEntitySet="T_PERSONAS">
+          <ScalarProperty Name="Id_PERSONA" ColumnName="Id_PERSONA" />
+          <ScalarProperty Name="IDENT_PERSONA" ColumnName="IDENT_PERSONA" />
+          <ScalarProperty Name="NOMBRE_PERSONA" ColumnName="NOMBRE_PERSONA" />
+          <ScalarProperty Name="CORREO_PERSONA" ColumnName="CORREO_PERSONA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T_USUARIOS">
+      <EntityTypeMapping TypeName="dbWS_ClimaModel.T_USUARIOS">
+        <MappingFragment StoreEntitySet="T_USUARIOS">
+          <ScalarProperty Name="Id_USUARIO" ColumnName="Id_USUARIO" />
+          <ScalarProperty Name="NOMBRE_USUARIO" ColumnName="NOMBRE_USUARIO" />
+          <ScalarProperty Name="CLAVE_USUARIO" ColumnName="CLAVE_USUARIO" />
+          <ScalarProperty Name="IdPERSONA_USUARIO" ColumnName="IdPERSONA_USUARIO" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

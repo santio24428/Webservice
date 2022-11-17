@@ -1,0 +1,236 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.5.2": {
+      "EntityFramework/5.0.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
+          "System.Data.Entity"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Datos_Clima/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.2",
+        "dependencies": {
+          "EntityFramework": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Datos_Clima.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Datos_Clima.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5.2/win": {
+      "EntityFramework/5.0.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
+          "System.Data.Entity"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Datos_Clima/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.2",
+        "dependencies": {
+          "EntityFramework": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Datos_Clima.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Datos_Clima.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5.2/win-x64": {
+      "EntityFramework/5.0.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
+          "System.Data.Entity"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Datos_Clima/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.2",
+        "dependencies": {
+          "EntityFramework": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Datos_Clima.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Datos_Clima.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.5.2/win-x86": {
+      "EntityFramework/5.0.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
+          "System.Data.Entity"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Datos_Clima/1.0.0": {
+        "type": "project",
+        "framework": ".NETFramework,Version=v4.5.2",
+        "dependencies": {
+          "EntityFramework": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Datos_Clima.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Datos_Clima.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EntityFramework/5.0.0": {
+      "sha512": "WYfgJWKg/RjwU8pzZkImD9DsV+J1nqDcIGp1S0/bdnElKBmAaUC2nmq/QQAcco32KyQQWnLgJNiDzIOz2xWFbQ==",
+      "type": "package",
+      "path": "entityframework/5.0.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/App.config.transform",
+        "Content/Web.config.transform",
+        "entityframework.5.0.0.nupkg.sha512",
+        "entityframework.nuspec",
+        "lib/net40/EntityFramework.dll",
+        "lib/net40/EntityFramework.xml",
+        "lib/net45/EntityFramework.dll",
+        "lib/net45/EntityFramework.xml",
+        "tools/EntityFramework.PS3.psd1",
+        "tools/EntityFramework.PowerShell.Utility.dll",
+        "tools/EntityFramework.PowerShell.dll",
+        "tools/EntityFramework.psd1",
+        "tools/EntityFramework.psm1",
+        "tools/Redirect.VS11.config",
+        "tools/Redirect.config",
+        "tools/about_EntityFramework.help.txt",
+        "tools/init.ps1",
+        "tools/install.ps1",
+        "tools/migrate.exe"
+      ]
+    },
+    "Datos_Clima/1.0.0": {
+      "type": "project",
+      "path": "../Datos_Clima/Datos_Clima.csproj",
+      "msbuildProject": "../Datos_Clima/Datos_Clima.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.5.2": [
+      "Datos_Clima >= 1.0.0",
+      "EntityFramework >= 5.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\santiago\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\santiago\\source\\repos\\WebService_Prueba\\Logica_Clima\\Logica_Clima.csproj",
+      "projectName": "Logica_Clima",
+      "projectPath": "C:\\Users\\santiago\\source\\repos\\WebService_Prueba\\Logica_Clima\\Logica_Clima.csproj",
+      "packagesPath": "C:\\Users\\santiago\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\santiago\\source\\repos\\WebService_Prueba\\Logica_Clima\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\santiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net452"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net452": {
+          "projectReferences": {
+            "C:\\Users\\santiago\\source\\repos\\WebService_Prueba\\Datos_Clima\\Datos_Clima.csproj": {
+              "projectPath": "C:\\Users\\santiago\\source\\repos\\WebService_Prueba\\Datos_Clima\\Datos_Clima.csproj"
+            }
+          }
+        }
+      }
+    },
+    "frameworks": {
+      "net452": {
+        "dependencies": {
+          "EntityFramework": {
+            "target": "Package",
+            "version": "[5.0.0, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

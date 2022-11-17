@@ -1,0 +1,9 @@
+C:\Users\santiago\source\repos\WebService_Prueba\Datos_Clima\bin\Debug\Datos_Clima.dll.config
+C:\Users\santiago\source\repos\WebService_Prueba\Datos_Clima\bin\Debug\Datos_Clima.dll
+C:\Users\santiago\source\repos\WebService_Prueba\Datos_Clima\bin\Debug\Datos_Clima.pdb
+C:\Users\santiago\source\repos\WebService_Prueba\Datos_Clima\bin\Debug\EntityFramework.dll
+C:\Users\santiago\source\repos\WebService_Prueba\Datos_Clima\obj\Debug\Datos_Clima.csproj.AssemblyReference.cache
+C:\Users\santiago\source\repos\WebService_Prueba\Datos_Clima\obj\Debug\Datos_Clima.csproj.CoreCompileInputs.cache
+C:\Users\santiago\source\repos\WebService_Prueba\Datos_Clima\obj\Debug\Datos_Clima.csproj.CopyComplete
+C:\Users\santiago\source\repos\WebService_Prueba\Datos_Clima\obj\Debug\Datos_Clima.dll
+C:\Users\santiago\source\repos\WebService_Prueba\Datos_Clima\obj\Debug\Datos_Clima.pdb

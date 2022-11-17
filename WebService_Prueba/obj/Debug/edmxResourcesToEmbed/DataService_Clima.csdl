@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbWS_ClimaModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+  <EntityType Name="T_CLIMA">
+    <Key>
+      <PropertyRef Name="Id_CLIMA" />
+    </Key>
+    <Property Name="Id_CLIMA" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdUSUARIO_CLIMA" Type="Int32" />
+    <Property Name="CIUDAD_CLIMA" Type="String" MaxLength="15" FixedLength="true" Unicode="true" />
+    <Property Name="TEMPERATURA_CLIMA" Type="Byte" />
+    <Property Name="FECHA_CLIMA" Type="DateTime" Precision="0" />
+    <Property Name="ESTADO_CLIMA" Type="String" MaxLength="15" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="T_PERSONAS">
+    <Key>
+      <PropertyRef Name="Id_PERSONA" />
+    </Key>
+    <Property Name="Id_PERSONA" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDENT_PERSONA" Type="String" MaxLength="12" FixedLength="true" Unicode="true" />
+    <Property Name="NOMBRE_PERSONA" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="CORREO_PERSONA" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="T_USUARIOS">
+    <Key>
+      <PropertyRef Name="Id_USUARIO" />
+    </Key>
+    <Property Name="Id_USUARIO" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NOMBRE_USUARIO" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="CLAVE_USUARIO" Type="Binary" MaxLength="50" FixedLength="true" Nullable="false" />
+    <Property Name="IdPERSONA_USUARIO" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="dbWS_ClimaEntities">
+    <EntitySet Name="T_CLIMA" EntityType="Self.T_CLIMA" />
+    <EntitySet Name="T_PERSONAS" EntityType="Self.T_PERSONAS" />
+    <EntitySet Name="T_USUARIOS" EntityType="Self.T_USUARIOS" />
+  </EntityContainer>
+</Schema>

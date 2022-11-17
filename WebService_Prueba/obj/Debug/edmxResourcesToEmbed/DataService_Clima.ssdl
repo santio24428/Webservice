@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbWS_ClimaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+  <EntityType Name="T_CLIMA">
+    <Key>
+      <PropertyRef Name="Id_CLIMA" />
+    </Key>
+    <Property Name="Id_CLIMA" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdUSUARIO_CLIMA" Type="int" />
+    <Property Name="CIUDAD_CLIMA" Type="nchar" MaxLength="15" />
+    <Property Name="TEMPERATURA_CLIMA" Type="tinyint" />
+    <Property Name="FECHA_CLIMA" Type="date" />
+    <Property Name="ESTADO_CLIMA" Type="nchar" MaxLength="15" />
+  </EntityType>
+  <EntityType Name="T_PERSONAS">
+    <Key>
+      <PropertyRef Name="Id_PERSONA" />
+    </Key>
+    <Property Name="Id_PERSONA" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IDENT_PERSONA" Type="nchar" MaxLength="12" />
+    <Property Name="NOMBRE_PERSONA" Type="nchar" MaxLength="50" />
+    <Property Name="CORREO_PERSONA" Type="nchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="T_USUARIOS">
+    <Key>
+      <PropertyRef Name="Id_USUARIO" />
+    </Key>
+    <Property Name="Id_USUARIO" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NOMBRE_USUARIO" Type="nchar" MaxLength="50" />
+    <Property Name="CLAVE_USUARIO" Type="binary" MaxLength="50" Nullable="false" />
+    <Property Name="IdPERSONA_USUARIO" Type="int" />
+  </EntityType>
+  <EntityContainer Name="dbWS_ClimaModelStoreContainer">
+    <EntitySet Name="T_CLIMA" EntityType="Self.T_CLIMA" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_PERSONAS" EntityType="Self.T_PERSONAS" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T_USUARIOS" EntityType="Self.T_USUARIOS" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

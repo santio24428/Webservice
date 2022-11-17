@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZtMl3zmXBoQi84p2jSsxDRfyIW+bSjPyR5R4tZDAr0m4XewecoJnZnNGxcWoifvmyrPyWg3EsS+y73VnrQNcTA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\santiago\\source\\repos\\WebService_Prueba\\Logica_Clima\\Logica_Clima.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\santiago\\.nuget\\packages\\entityframework\\5.0.0\\entityframework.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

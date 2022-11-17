@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Hn0WqklxKarsHj+OmgUGIxCbNRO4PyL9iuY8XqUGm2/d3pFOCQZv69QgNHD50/7oLp/aPPCrqQ1YAWOnoejG0w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\santiago\\source\\repos\\WebService_Prueba\\Datos_Clima\\Datos_Clima.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\santiago\\.nuget\\packages\\entityframework\\5.0.0\\entityframework.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,59 @@
+h2{
+    text-align: center;
+}
+
+.contenedor {
+    width: 30% !important;
+    margin-top: 13% ;
+    margin-left: 300px;
+    border: 5px;
+}
+
+.ajax__validatorcallout div, .ajax__validatorcallout td {
+    border: solid 1px Black;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-right-color: Black;
+    border-left-color: Black;
+    background-color: white !important;
+}
+
+.ajax__validatorcallout_error_message_cell {
+    font-family: Verdana;
+    font-size: 13px !important;
+    padding: 5px;
+    border-right: none !important;
+    border-left: none !important;
+    width: 100%;
+}
+
+.formulario {
+    width: 45%;
+    margin-top: 40px;
+    padding-right: 50px;
+}
+
+.tabla-alternar tbody tr th, .tabla-alternar thead tr th {
+    background-color: #5D7B9D;
+    color: white;
+    border-right: 1px solid white;
+}
+
+.tabla-alternar {
+    font-size: small;
+}
+
+
+    .tabla-alternar tbody tr:hover td {
+        background-color: #86b2e0 !important;
+    }
+
+    .tabla-alternar tbody tr td {
+        border-color: #EBE9EA;
+    }
+
+    .tabla-alternar > tbody > tr:nth-of-type(odd) {
+        background-color: #F7F6F3;
+    }

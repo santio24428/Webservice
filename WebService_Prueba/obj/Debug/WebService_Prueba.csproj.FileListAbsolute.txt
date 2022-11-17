@@ -1,0 +1,16 @@
+C:\Users\santiago\source\repos\WebService_Prueba\WebService_Prueba\obj\Debug\WebService_Prueba.csproj.AssemblyReference.cache
+C:\Users\santiago\source\repos\WebService_Prueba\WebService_Prueba\obj\Debug\WebService_Prueba.csproj.CoreCompileInputs.cache
+C:\Users\santiago\source\repos\WebService_Prueba\WebService_Prueba\bin\WebService_Prueba.dll.config
+C:\Users\santiago\source\repos\WebService_Prueba\WebService_Prueba\bin\WebService_Prueba.dll
+C:\Users\santiago\source\repos\WebService_Prueba\WebService_Prueba\bin\WebService_Prueba.pdb
+C:\Users\santiago\source\repos\WebService_Prueba\WebService_Prueba\bin\Datos_Clima.dll
+C:\Users\santiago\source\repos\WebService_Prueba\WebService_Prueba\bin\EntityFramework.dll
+C:\Users\santiago\source\repos\WebService_Prueba\WebService_Prueba\bin\Logica_Clima.dll
+C:\Users\santiago\source\repos\WebService_Prueba\WebService_Prueba\bin\Datos_Clima.pdb
+C:\Users\santiago\source\repos\WebService_Prueba\WebService_Prueba\bin\Datos_Clima.dll.config
+C:\Users\santiago\source\repos\WebService_Prueba\WebService_Prueba\bin\Logica_Clima.pdb
+C:\Users\santiago\source\repos\WebService_Prueba\WebService_Prueba\bin\Logica_Clima.dll.config
+C:\Users\santiago\source\repos\WebService_Prueba\WebService_Prueba\bin\EntityFramework.xml
+C:\Users\santiago\source\repos\WebService_Prueba\WebService_Prueba\obj\Debug\WebService_Prueba.csproj.CopyComplete
+C:\Users\santiago\source\repos\WebService_Prueba\WebService_Prueba\obj\Debug\WebService_Prueba.dll
+C:\Users\santiago\source\repos\WebService_Prueba\WebService_Prueba\obj\Debug\WebService_Prueba.pdb

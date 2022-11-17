@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:tns="http://tempuri.org/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ObtenerDatosClima">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idclima" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerDatosClimaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtenerDatosClimaResult" type="tns:T_CLIMA" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="T_CLIMA">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id_CLIMA" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdUSUARIO_CLIMA" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="CIUDAD_CLIMA" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="TEMPERATURA_CLIMA" nillable="true" type="s:unsignedByte" />
+          <s:element minOccurs="1" maxOccurs="1" name="FECHA_CLIMA" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="ESTADO_CLIMA" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ObtenerListaDatosClima">
+        <s:complexType />
+      </s:element>
+      <s:element name="ObtenerListaDatosClimaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtenerListaDatosClimaResult" type="tns:ArrayOfT_CLIMA" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfT_CLIMA">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="T_CLIMA" nillable="true" type="tns:T_CLIMA" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="ActualizarDatosClima">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObjClima" type="tns:T_CLIMA" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActualizarDatosClimaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ActualizarDatosClimaResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AgregarDatosClima">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObjClima" type="tns:T_CLIMA" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AgregarDatosClimaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AgregarDatosClimaResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerUsuxLogin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="clave" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerUsuxLoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtenerUsuxLoginResult" type="tns:T_USUARIOS" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="T_USUARIOS">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id_USUARIO" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="NOMBRE_USUARIO" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CLAVE_USUARIO" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="IdPERSONA_USUARIO" nillable="true" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="EliminarDatosClima">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idclima" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EliminarDatosClimaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="EliminarDatosClimaResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ObtenerDatosClimaSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtenerDatosClima" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerDatosClimaSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtenerDatosClimaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerListaDatosClimaSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtenerListaDatosClima" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerListaDatosClimaSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtenerListaDatosClimaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ActualizarDatosClimaSoapIn">
+    <wsdl:part name="parameters" element="tns:ActualizarDatosClima" />
+  </wsdl:message>
+  <wsdl:message name="ActualizarDatosClimaSoapOut">
+    <wsdl:part name="parameters" element="tns:ActualizarDatosClimaResponse" />
+  </wsdl:message>
+  <wsdl:message name="AgregarDatosClimaSoapIn">
+    <wsdl:part name="parameters" element="tns:AgregarDatosClima" />
+  </wsdl:message>
+  <wsdl:message name="AgregarDatosClimaSoapOut">
+    <wsdl:part name="parameters" element="tns:AgregarDatosClimaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerUsuxLoginSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtenerUsuxLogin" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerUsuxLoginSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtenerUsuxLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="EliminarDatosClimaSoapIn">
+    <wsdl:part name="parameters" element="tns:EliminarDatosClima" />
+  </wsdl:message>
+  <wsdl:message name="EliminarDatosClimaSoapOut">
+    <wsdl:part name="parameters" element="tns:EliminarDatosClimaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebService_ClimaSoap">
+    <wsdl:operation name="ObtenerDatosClima">
+      <wsdl:input message="tns:ObtenerDatosClimaSoapIn" />
+      <wsdl:output message="tns:ObtenerDatosClimaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerListaDatosClima">
+      <wsdl:input message="tns:ObtenerListaDatosClimaSoapIn" />
+      <wsdl:output message="tns:ObtenerListaDatosClimaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarDatosClima">
+      <wsdl:input message="tns:ActualizarDatosClimaSoapIn" />
+      <wsdl:output message="tns:ActualizarDatosClimaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AgregarDatosClima">
+      <wsdl:input message="tns:AgregarDatosClimaSoapIn" />
+      <wsdl:output message="tns:AgregarDatosClimaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerUsuxLogin">
+      <wsdl:input message="tns:ObtenerUsuxLoginSoapIn" />
+      <wsdl:output message="tns:ObtenerUsuxLoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarDatosClima">
+      <wsdl:input message="tns:EliminarDatosClimaSoapIn" />
+      <wsdl:output message="tns:EliminarDatosClimaSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebService_ClimaSoap" type="tns:WebService_ClimaSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ObtenerDatosClima">
+      <soap:operation soapAction="http://tempuri.org/ObtenerDatosClima" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerListaDatosClima">
+      <soap:operation soapAction="http://tempuri.org/ObtenerListaDatosClima" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarDatosClima">
+      <soap:operation soapAction="http://tempuri.org/ActualizarDatosClima" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AgregarDatosClima">
+      <soap:operation soapAction="http://tempuri.org/AgregarDatosClima" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerUsuxLogin">
+      <soap:operation soapAction="http://tempuri.org/ObtenerUsuxLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarDatosClima">
+      <soap:operation soapAction="http://tempuri.org/EliminarDatosClima" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebService_ClimaSoap12" type="tns:WebService_ClimaSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ObtenerDatosClima">
+      <soap12:operation soapAction="http://tempuri.org/ObtenerDatosClima" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerListaDatosClima">
+      <soap12:operation soapAction="http://tempuri.org/ObtenerListaDatosClima" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarDatosClima">
+      <soap12:operation soapAction="http://tempuri.org/ActualizarDatosClima" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AgregarDatosClima">
+      <soap12:operation soapAction="http://tempuri.org/AgregarDatosClima" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerUsuxLogin">
+      <soap12:operation soapAction="http://tempuri.org/ObtenerUsuxLogin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarDatosClima">
+      <soap12:operation soapAction="http://tempuri.org/EliminarDatosClima" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebService_Clima">
+    <wsdl:port name="WebService_ClimaSoap" binding="tns:WebService_ClimaSoap">
+      <soap:address location="https://localhost:44365/WebService_Clima.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebService_ClimaSoap12" binding="tns:WebService_ClimaSoap12">
+      <soap12:address location="https://localhost:44365/WebService_Clima.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
